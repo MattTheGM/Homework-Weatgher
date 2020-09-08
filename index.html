@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" 
+        rel="stylesheet"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" 
+    crossorigin="anonymous"
+    />
+    <link href="./owfont-master/css/owfont-regular.css" rel="stylesheet" type="text/css">
+    <link 
+        href="style.css" 
+        rel="stylesheet" 
+        type="text/css"
+    />
+    <title>Homework 6</title>
+</head>
+<div class="navigbar">
+    <div>
+        Treasurebase
+    </div>
+</div>
+<div class="parallax"></div>
+<body>
+    <div class="wrapper">
+        <div class="box-0"></div>
+        <div class="nested-row box-1">
+            <form>
+                <input type="text" placeholder="Search 'City, State'" id="search-input" value="">
+                <button class="search-button" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </form>
+            <div class="row">
+                <div class="col-12 btn-group-vertical text-center past-cities"></div>
+            </div>
+        </div>
+        <div class="nested-col box-2">
+            <div class ="card">
+                <div class="today-city"></div>
+                <div id="display-moment"></div>
+            </div>
+            <div class ="card">
+                <div class="today-tempF"></div>
+            </div>
+            <div class ="card">
+                <div class="today-wind"></div>
+            </div>
+            <div class ="card">
+                <div class="today-humidity"></div>
+            </div>
+            <div class ="card">
+                <div id="display-icon"></div>
+            </div>
+        </div>
+        <div class="nested-col box-3">
+            <div class ="card">
+                <div id="day-one"></div>
+                <div id="tempF-8"></div>  
+                <div id="wind-8"></div>
+                <div id="humidity-8"></div>
+                <div id="show-me-8"></div>
+            </div>
+            <div class ="card">
+                <div id="day-two"></div>
+                <div id="tempF-16"></div>
+                <div id="wind-16"></div>
+                <div id="humidity-16"></div>
+                <div id="show-me-16"></div>
+            </div>
+            <div class ="card">
+                <div id="day-three"></div>
+                <div id="tempF-24"></div>
+                <div id="wind-24"></div>
+                <div id="humidity-24"></div>
+                <div id="show-me-24"></div>
+            </div>
+            <div class ="card">
+                <div id="day-four"></div>
+                <div id="tempF-32"></div>
+                <div id="wind-32"></div>
+                <div id="humidity-32"></div>
+                <div id="show-me-32"></div>
+            </div>
+            <div class ="card">
+                <div id="day-five"></div>
+                <div id="tempF-39"></div>
+                <div id="wind-39"></div> 
+                <div id="humidity-39"></div>
+                <div id="show-me-39"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="parallax"></div>
+    <div class="box-6">
+        <div id="map"></div>
+    </div>
+    <div class="box-7">   
+    <footer id="sticky-footer">
+        <div>
+            <small>Copyright &copy; Treasurebase</small>
+        </div>
+    </div>
+    </footer>
+    <!-- jQuery JS -->   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+        <script src="js.js"></script>   
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDEizFArd13hBQW8HG44MCIbZxJgx2Yuw&callback=initMap">
+    </script>
+</body>
+</html>
